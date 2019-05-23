@@ -1,0 +1,54 @@
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~mdbootstrap/scss/mdb';
+@import '~mdbootstrap/scss/addons/_datatables';
+@import '~mdbootstrap/scss/addons/_datatables-select';
+@import '~datatables.net-plugins/features/searchHighlight/dataTables.searchHighlight';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+// tr td:last-child {
+//     width: 20%;
+// }
+.custom-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-progress-appearance: none;
+  appearance: none;
+}
+.col-md-4 {
+  margin-bottom: 10px !important;
+}
+.fas {
+  line-height: 24px !important;
+  margin-right: 10px;
+}
+// .dt-bootstrap4 {
+//     .row {
+//         margin-left: 0;
+//         margin-right: 0;
+//     }
+
+//     .dataTables_empty {
+//         text-align: center;
+//     }
+
+//     .dataTables_processing {
+//         position: absolute;
+//         top: 60px;
+//         left: 84%;
+//         width: 32%;
+//         height: 40px;
+//         margin-left: -50%;
+//         padding-top: 6px;
+//         text-align: center;
+//         font-size: 1.2em;
+//     }
+
+//     tr td:last-child {
+//         width: 8%;
+//     }
+//     tr td:first-child {
+//         width: 15%;
+//     }
+// }

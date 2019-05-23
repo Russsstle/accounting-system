@@ -1,0 +1,9 @@
+{
+  "SAVED_SUCCESS": "Saved Successfully",
+  "ADDED_SUCCESS": "Added a New Entry",
+  "UPDATE_SUCCESS": "Updated Successfully",
+  "DELETE_SUCCESS": "Deleted Successfully",
+  "DELETE_FAIL": "There was an error deleting it.",
+  "SERVER_ERROR": "Server Error. Please try again.",
+  "FETCH_FAIL": "Failed to fetch data."
+}
