@@ -36,6 +36,9 @@ export class Transactions extends Component {
     const transaction = new Api('transactions')
     await transaction.add()
     alert(messages.ADDED_SUCCESS)
+    this.setState({
+      accountName: 'All Accounts'
+    })
     this.fetchData()
   }
 
