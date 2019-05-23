@@ -78,14 +78,15 @@ class Dashboard extends Component {
         total += value
       }
 
-      accounts.unshift({
-        name: 'All Accounts',
-        value: total
-      })
+      // accounts.unshift({
+      //   name: 'All Accounts',
+      //   value: total
+      // })
 
       this.setState({
         filter: accounts
       })
+
       console.log(this.state.filter)
     } catch (err) {
       console.log(err)
