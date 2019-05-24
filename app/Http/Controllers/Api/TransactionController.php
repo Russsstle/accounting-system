@@ -20,8 +20,10 @@ class TransactionController extends Controller {
     foreach ($transactions as $transaction) {
       $item = new \stdClass;
 
-      $item->id          = $transaction->id;
-      $item->date        = $transaction->date->format('F d, Y');
+      $item->id    = $transaction->id;
+      $item->title = $transaction->title;
+      $item->date  = $transaction->date->format('F d, Y');
+
       $item->account     = $transaction->account;
       $item->type        = $transaction->type;
       $item->description = $transaction->description;
@@ -42,7 +44,7 @@ class TransactionController extends Controller {
     $transaction = new Transaction;
     $date        = date('Y-m-d');
     // $transaction->fill($request->only($transaction->getfillable()));
-    $transaction->fill(['type' => 'income', 'date' => $date, 'account' => 'A New Account', 'description' => '', 'value' => 0]);
+    $transaction->fill(['title' => 'A New Entry', 'type' => 'income', 'date' => $date, 'account' => 'A New Account', 'description' => '', 'value' => 0]);
     $transaction->save();
     return ['success' => true];
   }
@@ -60,6 +62,7 @@ class TransactionController extends Controller {
 
     $item->id          = $transactions->id;
     $item->date        = $transactions->date->format('Y-m-d');
+    $item->title       = $transactions->title;
     $item->type        = $transactions->type;
     $item->account     = $transactions->account;
     $item->description = $transactions->description;

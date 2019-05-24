@@ -11,6 +11,7 @@ class TransactionTableSeeder extends Seeder {
    */
   public function run() {
     $company              = new Transaction;
+    $company->title       = 'Invested';
     $company->type        = 'income';
     $company->date        = '2018-01-30';
     $company->account     = 'BDO';
@@ -18,6 +19,7 @@ class TransactionTableSeeder extends Seeder {
     $company->value       = '2123';
     $company->save();
     $company              = new Transaction;
+    $company->title       = 'Service Income';
     $company->type        = 'income';
     $company->date        = '2018-01-30';
     $company->account     = 'BDO';
@@ -25,6 +27,7 @@ class TransactionTableSeeder extends Seeder {
     $company->value       = '21010';
     $company->save();
     $company              = new Transaction;
+    $company->title       = 'Electric Bill';
     $company->type        = 'expense';
     $company->date        = '2018-01-30';
     $company->account     = 'BDO';
@@ -32,6 +35,7 @@ class TransactionTableSeeder extends Seeder {
     $company->value       = '21220';
     $company->save();
     $company              = new Transaction;
+    $company->title       = 'Rent';
     $company->type        = 'expense';
     $company->date        = '2018-01-30';
     $company->account     = 'BDO';

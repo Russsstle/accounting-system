@@ -25,7 +25,7 @@ export class Transactions extends Component {
   @autobind
   toggleForm(id = null) {
     this.form.current.fetchData(id)
-
+    // document.documentElement.scrollTop = 0
     this.setState({
       formShown: true,
       id
@@ -35,7 +35,7 @@ export class Transactions extends Component {
   async add() {
     const transaction = new Api('transactions')
     await transaction.add()
-    alert(messages.ADDED_SUCCESS)
+    // alert(messages.ADDED_SUCCESS)
     this.setState({
       accountName: 'All Accounts'
     })
@@ -154,7 +154,7 @@ export class Transactions extends Component {
           <div className='card-body'>
             <div className='row'>
               <div className='col'>
-                <div className='table-responsive'>
+                <div className='table-responsive' style={{ height: 450 }}>
                   <table className='table table-hover' width='100%'>
                     <thead>
                       <tr>
@@ -167,7 +167,7 @@ export class Transactions extends Component {
                       {table.map((item, key) => (
                         <tr key={key} onClick={() => this.toggleForm(item.id)} style={{ cursor: 'pointer' }}>
                           <td>
-                            <h5 className='font-weight-bold'>{item.description || 'Write a Description'}</h5>
+                            <h5 className='font-weight-bold'>{item.title || 'Write a Description'}</h5>
                             {item.date} <i>{item.account}</i>
                           </td>
                           <td

@@ -13,6 +13,7 @@ class CreateTransactionsTable extends Migration {
   public function up() {
     Schema::create('transactions', function (Blueprint $table) {
       $table->bigIncrements('id');
+      $table->string('title');
       $table->string('type');
       $table->date('date');
       $table->string('account');

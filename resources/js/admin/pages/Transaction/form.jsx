@@ -84,7 +84,7 @@ export class Form extends Component {
     ) : (
       <div>
         <div className='clearfix' style={{ marginTop: 2 }}>
-          <h4 className='float-left'>Transaction Details </h4>
+          <h4 className='float-left'>Transaction Details</h4>
           <a className='float-right mr-2' onClick={this.props.handleClose}>
             <i className='fas fa-times fa-lg' />
           </a>
@@ -92,6 +92,18 @@ export class Form extends Component {
         <hr style={{ borderWidth: 2 }} />
         <form onSubmit={this.handleSubmit}>
           <div className='row'>
+            <div className='form-group col'>
+              <label>Title</label>
+              <input
+                type='text'
+                className='form-control'
+                name='title'
+                defaultValue={transaction.title}
+                required
+                // defaultValue={transaction.title}
+              />
+            </div>
+            <div className='w-100' />
             <div className='form-group col'>
               <label>Date</label>
               <input

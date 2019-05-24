@@ -9,7 +9,7 @@ class Transaction extends Model {
    * @var array
    */
   protected $fillable = [
-    'date', 'account', 'description', 'value', 'type'
+    'title', 'date', 'account', 'description', 'value', 'type'
   ];
 
   /**
