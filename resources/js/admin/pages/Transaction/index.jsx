@@ -167,7 +167,7 @@ export class Transactions extends Component {
                       {table.map((item, key) => (
                         <tr key={key} onClick={() => this.toggleForm(item.id)} style={{ cursor: 'pointer' }}>
                           <td>
-                            <h5 className='font-weight-bold'>{item.title || 'Write a Description'}</h5>
+                            <h5 className='font-weight-bold'>{item.title || 'Write a Title'}</h5>
                             {item.date} <i>{item.account}</i>
                           </td>
                           <td
