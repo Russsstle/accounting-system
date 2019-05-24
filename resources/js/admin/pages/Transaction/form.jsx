@@ -46,6 +46,7 @@ export class Form extends Component {
       try {
         await transaction.remove(id)
         alert(messages.DELETE_SUCCESS)
+        this.props.handleClose()
         this.props.fetchData()
       } catch (err) {
         console.log(err)
