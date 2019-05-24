@@ -117,7 +117,7 @@ export class Transactions extends Component {
 
     this.fetchData()
 
-    // console.log(this.state.table)
+    console.log(this.state.table)
     // alert(this.state.accountName)
   }
 
